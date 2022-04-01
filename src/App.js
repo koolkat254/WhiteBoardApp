@@ -6,12 +6,13 @@ import UploadPage from './pages/UploadPage'
 import AboutPage from './pages/AboutPage'
 import React from 'react';
 import {Route, Routes} from 'react-router-dom'
+import classes from './App.css'
 
 
 function App() {
   return (
-    <div>
-      <MainNavigation/>
+    <div className={classes.main}>
+      <MainNavigation />
       <Routes>
         <Route exact path='/' element={<HomePage />}/>
         <Route path='/upload' element={<UploadPage />}/>
