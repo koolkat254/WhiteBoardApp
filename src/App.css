@@ -29,9 +29,9 @@
 }
 
 .main {
-  margin: 3rem auto;
-  width: 90%;
-  max-width: 40rem;
+  /* margin: 3rem auto; */
+  width: 100%;
+  /* max-width: 40rem; */
 }
 
 @keyframes App-logo-spin {

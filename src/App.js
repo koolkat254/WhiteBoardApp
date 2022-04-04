@@ -11,7 +11,7 @@ import classes from './App.css'
 
 function App() {
   return (
-    <div className={classes.main}>
+    <div className='main'>
       <MainNavigation />
       <Routes>
         <Route exact path='/' element={<HomePage />}/>

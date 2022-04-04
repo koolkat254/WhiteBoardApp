@@ -1,10 +1,10 @@
 .header {
-  width: 80%;
+  width: auto;
   height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1005a8;
+  background-color: #CFCFCF;
   padding: 0 10%;
 }
 
@@ -24,12 +24,14 @@
 
 .header li {
   margin-left: 3rem;
+  background-color: #FFB12d;
+  padding: 1rem 2rem;
 }
 
 .header a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: #c2b8fc;
+  color: #FFFFFF;
 }
 
 .header a:hover,
