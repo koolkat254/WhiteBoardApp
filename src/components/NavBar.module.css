@@ -1,0 +1,55 @@
+.header {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6d6d6d;
+    padding: 0 10%;
+    
+  }
+  
+  .logo {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .header li {
+    margin-left: 3rem;
+    background-color: #ff9d00;
+    width: 200px;
+    height: 55px;
+    margin-right: 10px;
+    border-radius: 25px;
+  }
+  
+  .header a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .header a:hover,
+  .header a:active,
+  .header a.active {
+    color: white;
+  }
+  
+  .badge {
+    background-color: #cc2062;
+    color: white;
+    border-radius: 12px;
+    padding: 0 1rem;
+    margin-left: 0.5rem;
+  }
