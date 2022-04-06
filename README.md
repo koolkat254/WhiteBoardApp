@@ -4,5 +4,5 @@ White Board App using React
 Collaborators:
 Ethan
 Evan
-Hassannnn
+Hassan
 Finley
