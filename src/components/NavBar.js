@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import styles from './NavBar.module.css';
 
 const NavBar = () => {
   return (
-    <header>
-        <div>White Board APP</div>
+    <header className={styles.header}>
+        <div className={styles.logo}>White Board APP</div>
         <nav>
             <ul>
                 <li>
