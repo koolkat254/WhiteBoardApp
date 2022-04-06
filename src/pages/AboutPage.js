@@ -12,7 +12,7 @@ const AboutPage = () => {
       </div>
       <div className={styles.creators}>
       <span class={styles.dot1}></span>
-      <h1>Creators</h1>
+      <h1>Creatorsss</h1>
       </div>
       <div className={styles.contact}>
       <span class={styles.dot2}></span>
