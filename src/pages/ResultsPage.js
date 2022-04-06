@@ -1,8 +1,8 @@
 import React from 'react'
 
-function ResultsPage() {
+const ResultsPage = () => {
   return (
-    <div>Results Page</div>
+    <div>ResultsPage</div>
   )
 }
 

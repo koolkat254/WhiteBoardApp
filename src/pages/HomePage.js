@@ -1,8 +1,8 @@
 import React from 'react'
 
-function HomePage() {
+const HomePage = () => {
   return (
-    <div>WhiteBoard App</div>
+    <div>HomePage</div>
   )
 }
 

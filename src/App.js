@@ -1,26 +1,37 @@
 import './App.css';
-import MainNavigation from './components/MainNavigation'
-import HomePage from './pages/HomePage';
+import { Route, Routes} from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import NewWhiteBoardPage from './pages/NewWhiteboardPage'
 import ResultsPage from './pages/ResultsPage'
-import UploadPage from './pages/UploadPage'
 import AboutPage from './pages/AboutPage'
-import React from 'react';
-import {Route, Routes} from 'react-router-dom'
-import classes from './App.css'
-
+import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className='main'>
-      <MainNavigation />
+
+    <div>
+          <NavBar />
+      {/* <NavBar /> */}
       <Routes>
-        <Route exact path='/' element={<HomePage />}/>
-        <Route path='/upload' element={<UploadPage />}/>
-        <Route path='/results' element={<ResultsPage />}/>
-        <Route path='/about' element={<AboutPage />}/>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/new-WhiteBoard" element={<NewWhiteBoardPage />} />
+        <Route path="/results" element={<ResultsPage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </div>
   );
 }
 
+// MEETUP APP.js
+// function App() {
+//   return (
+//     <Layout>
+//       <Routes>
+//         <Route path="/" element={<AllMeetupsPage />} />
+//         <Route path="/new-meetup" element={<NewMeetupsPage />} />
+//         <Route path="/favorites" element={<FavoritesPage />} />
+//       </Routes>
+//     </Layout>
+//   );
+// }
 export default App;
