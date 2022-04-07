@@ -14,15 +14,19 @@ const AboutPage = () => {
         you had taken a photo of. You can also have your whiteboard enter a competition with another whiteboard made by another user. Other
         users will vote on which is the best one and the winnings will be posted in the "Results" page.</p>
       </div>
+      </div>
       <div className={styles.box}>
-      <span className={styles.dot}></span>
-      <h1>Creators</h1>
+        <div className={styles.boxtxt}>
+        {/* <span className={styles.dot}></span> */}
+        <h1>Creators</h1>
+        </div>
       </div>
-      <div className={styles.contact}>
-      <span className={styles.dot}></span>
-      <h1>Contact</h1>
+      <div className={styles.box}>
+        <div className={styles.boxtxt}>
+        {/* <span className={styles.dot}></span> */}
+        <h1>Contact</h1>
+        </div>
       </div>
-    </div>
     </div>
   )
 }
