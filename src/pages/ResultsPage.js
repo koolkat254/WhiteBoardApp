@@ -12,7 +12,7 @@ function Vote() {
   if (voteCtx.totalVotes === 0) {
     content = <p>You have no votes.</p>
   } else {
-    content = <WhiteboardList whiteboard={voteCtx.vote}/>
+    content = <WhiteboardList /* whiteboard={voteCtx.vote} *//>
   }
   
   

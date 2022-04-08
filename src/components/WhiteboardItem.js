@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './WhiteboardItem.module.css';
 import { useContext } from 'react'
 import VoteContext from '../store/voted-context'
+import Card from './ui/Card';
 
 const WhiteboardItem = (props) => {
   const voteCtx = useContext(VoteContext);
@@ -12,9 +13,10 @@ const WhiteboardItem = (props) => {
     } else {
       voteCtx.addVote({
         id: props.id,
+        image: props.image,
         title: props.title,
         author: props.author,
-        image: props.image,
+        
       })
     }
   }
@@ -22,6 +24,7 @@ const WhiteboardItem = (props) => {
   
   return (
     <li className={classes.item}>
+      <Card>
         <div className={classes.image}>
           <img src={props.image} alt={props.title} />
         </div>
@@ -32,6 +35,7 @@ const WhiteboardItem = (props) => {
         <div className={classes.actions}>
           <button onClick={toggleVoteStatusHandler}>{itemIsVote ? 'Remove from Votes' : 'Vote'}</button>
         </div>
+      </Card>
   </li>
   )
 }

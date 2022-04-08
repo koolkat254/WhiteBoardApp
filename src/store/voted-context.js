@@ -1,5 +1,4 @@
 import { createContext, useState } from 'react';
-import WhiteboardItem from '../components/WhiteboardItem';
 
 const VoteContext = createContext({
   vote: [],

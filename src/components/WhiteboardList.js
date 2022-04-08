@@ -2,10 +2,10 @@ import React from 'react'
 import WhiteboardItem from './WhiteboardItem';
 import classes from './WhiteboardList.module.css';
 
-const WhiteboardList = (props) => {
+function WhiteboardList(props) {
   return (
     <ul className={classes.list}>
-    {props.whiteboards.map((whiteboard) => (
+    {props.whiteboards?.map((whiteboard) => (
       <WhiteboardItem
         key={whiteboard.id}
         id={whiteboard.id}
