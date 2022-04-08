@@ -5,6 +5,7 @@ import styles from './NavBar.module.css';
 const NavBar = () => {
   return (
     <header className={styles.header}>
+        <img src="/icon picture.png"></img>
         <div className={styles.logo}>White Board APP</div>
         <nav>
             <ul>
