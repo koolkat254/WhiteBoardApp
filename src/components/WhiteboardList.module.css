@@ -1,0 +1,16 @@
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    background-color:#fff;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
