@@ -11,8 +11,7 @@ const WhiteboardList = (props) => {
         id={whiteboard.id}
         image={whiteboard.image}
         title={whiteboard.title}
-        address={whiteboard.address}
-        description={whiteboard.description}
+        author={whiteboard.author}
       />
     ))}
   </ul>

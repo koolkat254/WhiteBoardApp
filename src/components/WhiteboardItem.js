@@ -9,11 +9,10 @@ const WhiteboardItem = (props) => {
         </div>
         <div className={classes.content}>
           <h3>{props.title}</h3>
-          <address>{props.address}</address>
-          <p>{props.description}</p>
+          <p>{props.author}</p>
         </div>
         <div className={classes.actions}>
-          <button>To Favorites</button>
+          <button>Vote</button>
         </div>
   </li>
   )
