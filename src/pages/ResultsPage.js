@@ -12,7 +12,16 @@ function Vote() {
   if (voteCtx.totalVotes === 0) {
     content = <p>You have no votes.</p>
   } else {
-    content = <WhiteboardList /* whiteboard={voteCtx.vote} *//>
+    content = <WhiteboardList whiteboard={voteCtx.vote}/>
+    /* if (!work) {
+      work;
+    }elseif (work) {
+      while (work){
+        work;
+      }
+    } else {
+      fix work;
+    } */
   }
   
   
