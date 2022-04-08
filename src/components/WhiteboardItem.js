@@ -3,7 +3,6 @@ import classes from './WhiteboardItem.module.css';
 
 const WhiteboardItem = (props) => {
   return (
-    <div className={classes.container}>
     <li className={classes.item}>
         <div className={classes.image}>
           <img src={props.image} alt={props.title} />
@@ -17,7 +16,6 @@ const WhiteboardItem = (props) => {
           <button>To Favorites</button>
         </div>
   </li>
-  </div>
   )
 }
 

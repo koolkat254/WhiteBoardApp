@@ -4,7 +4,6 @@ import classes from './WhiteboardList.module.css';
 
 const WhiteboardList = (props) => {
   return (
-    <div className={classes.container}>
     <ul className={classes.list}>
     {props.whiteboards.map((whiteboard) => (
       <WhiteboardItem
@@ -17,7 +16,7 @@ const WhiteboardList = (props) => {
       />
     ))}
   </ul>
-  </div>
+  
   )
 }
 
