@@ -7,7 +7,7 @@ function NewWhiteboradPage() {
 
   function addWhiteboardHandler(whiteboardData){
     fetch(
-      'https://react-getting-started-9c89e-default-rtdb.firebaseio.com/meetups.json',
+      'https://react-getting-started-9c89e-default-rtdb.firebaseio.com/whiteboard.json',
       {
         method: 'POST',
         body: JSON.stringify(whiteboardData),
