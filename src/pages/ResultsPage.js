@@ -1,22 +1,12 @@
 import React from 'react'
-import {useContext} from 'react'
-import VoteContext from '../store/voted-context'
 import WhiteboardList from '../components/WhiteboardList';
 
 
 
  
-function Vote(props) {
-  const voteCtx = useContext(VoteContext);
+function Vote() {
 
-  let content;
 
- 
-
-  if (voteCtx.totalVotes === 0) {
-    content = <p>You have no votes.</p>
-  } else {
-    content = <WhiteboardList value={voteCtx.vote}/>
     /* if (!work) {
       work;
     }elseif (work) {
@@ -26,7 +16,7 @@ function Vote(props) {
     } else {
       fix work;
     } */
-  }
+  
 /*   Vote.contextTypes = {
     id: PropTypes.string,
     image: PropTypes.string,
@@ -37,8 +27,7 @@ function Vote(props) {
   return (
     <section>
       <h1>Votes</h1>
-       {content}
+      <WhiteboardList />
     </section>)
 }
-Vote.contextType = VoteContext;
 export default Vote
