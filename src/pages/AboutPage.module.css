@@ -5,8 +5,8 @@
 }
 .aboutbox {
     background-color: rgb(168, 167, 167);
-    width: 625px;
-    height: 525px;
+    width: 45%;
+    height: 65%;
     margin-top: 35px;
     margin-left: 25px;
     padding: 7px;
@@ -29,10 +29,10 @@
 .creatorsbox {
 
     background-color: rgb(168, 167, 167);
-    width: 325px;
-    height: 200px;
+    width: 20%;
+    height: 25%;
     margin-top: 35px;
-    margin-left: 900px;
+    margin-left: 60%;
     position: absolute;
     padding: 7px;
 }
@@ -43,15 +43,15 @@
     background-color: #ff9d00;
     display: block;
     text-align: center;
-    font-size: 25px;
+    font-size: 24px;
 }
 .contactsbox {
     background-color: rgb(168, 167, 167);
-    width: 325px;
-    height: 200px;
+    width: 20%;
+    height: 25%;
     position: absolute;
-    margin-left: 900px;
-    margin-top: 300px;
+    margin-left: 60%;
+    margin-top: 20%;
     padding: 7px;
 }
 .contactsbox h1 {
@@ -60,5 +60,5 @@
     background-color: #ff9d00;
     display: block;
     text-align: center;
-    font-size: 25px;
+    font-size: 24px;
 }
