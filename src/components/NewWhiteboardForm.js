@@ -20,6 +20,7 @@ function NewWhiteboardForm(props) {
       title: enteredTitle,
       image: enteredImage,
       author: enteredAuthor,
+      votes: 0,
     };
     props.onAddWhiteboard(whiteboardData);
   }
