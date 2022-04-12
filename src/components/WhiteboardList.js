@@ -2,6 +2,7 @@ import React from 'react'
 import WhiteboardItem from './WhiteboardItem';
 import classes from './WhiteboardList.module.css';
 
+
 function WhiteboardList(props) {
   return (
     <ul className={classes.list}>
@@ -12,6 +13,7 @@ function WhiteboardList(props) {
         image={whiteboard.image}
         title={whiteboard.title}
         author={whiteboard.author}
+        votes={whiteboard.vote}
       />
     ))}
   </ul>

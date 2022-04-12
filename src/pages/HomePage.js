@@ -1,6 +1,6 @@
 import React from 'react'
 import WhiteboardList from '../components/WhiteboardList';
-import {useState, useEffect} from 'react'
+import {useEffect,useState} from 'react'
 
 function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,8 +29,8 @@ function HomePage() {
         setIsLoading(false);
         setLoadedWhiteboards(whiteboards);
       });
-  }, []);
-
+  }, []); 
+  
   if (isLoading) {
     return (
       <section>
@@ -39,6 +39,8 @@ function HomePage() {
     );
   }
 
+  
+  
   return (
     <section>
       <h1>Home Page</h1>

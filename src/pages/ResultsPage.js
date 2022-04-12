@@ -1,33 +1,49 @@
 import React from 'react'
 import WhiteboardList from '../components/WhiteboardList';
+import {useEffect,useState} from 'react'
 
+function ResultsPage() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadedWhiteboards, setLoadedWhiteboards] = useState([]);
 
+  useEffect(() => {
+    setIsLoading(true);
+    fetch(
+      'https://react-getting-started-9c89e-default-rtdb.firebaseio.com/whiteboard.json'
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        const whiteboards = [];
 
- 
-function Vote() {
+        for (const key in data) {
+          const whiteboard = {
+            id: key,
+            ...data[key]
+          };
 
+          whiteboards.push(whiteboard);
+        }
 
-    /* if (!work) {
-      work;
-    }elseif (work) {
-      while (work){
-        work;
-      }
-    } else {
-      fix work;
-    } */
+        setIsLoading(false);
+        setLoadedWhiteboards(whiteboards);
+      });
+  }, []); 
   
-/*   Vote.contextTypes = {
-    id: PropTypes.string,
-    image: PropTypes.string,
-    title: PropTypes.string,
-    author: PropTypes.string,
-  } */
-  
+  if (isLoading) {
+    return (
+      <section>
+        <p>Loading...</p>
+      </section>
+    );
+  }
   return (
-    <section>
-      <h1>Votes</h1>
-      <WhiteboardList />
-    </section>)
+    <div>
+      <h1>Results</h1>
+      <WhiteboardList whiteboards={loadedWhiteboards} />
+    </div>
+  );
 }
-export default Vote
+
+export default ResultsPage
