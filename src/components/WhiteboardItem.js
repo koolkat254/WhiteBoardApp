@@ -12,14 +12,15 @@ const WhiteboardItem = (props) => {
         <div className={classes.content}>
           <h3>{props.title}</h3>
           <p>{props.author}</p>
+          <p>{(props.votes)} Votes </p>
         </div>
         <div className={classes.actions}>
-          <button>Vote</button>
-          <p>Votes {String(props.votes)}</p>
+          <button>Vote</button> 
         </div>
       </Card>
-  </li>
+    </li>  
   )
 }
+ 
 
 export default WhiteboardItem

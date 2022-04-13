@@ -9,11 +9,11 @@ function WhiteboardList(props) {
     {props.whiteboards?.map((whiteboard) => (
       <WhiteboardItem
         key={whiteboard.id}
-        id={whiteboard.id}
+        id={whiteboard.id}        
         image={whiteboard.image}
         title={whiteboard.title}
         author={whiteboard.author}
-        votes={whiteboard.vote}
+        votes={whiteboard.votes}
       />
     ))}
   </ul>
