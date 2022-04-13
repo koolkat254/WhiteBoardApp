@@ -1,11 +1,19 @@
+/* 
+gray-color: CFCFCF
+orange-color: FFB12D  
+green-color: 7ED957
+*/
+
+
 .header {
+    width: auto;
     height: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #6d6d6d;
-    padding: 0 10%;
-    
+    background-color: #CFCFCF;
+    padding: 0 3%;
+    font-family:  Courier, monospace;
   }
   
   .logo {
@@ -23,21 +31,15 @@
   }
   
   .header li {
-    margin-left: 3rem;
-    background-color: #ff9d00;
-    width: 200px;
-    height: 55px;
-    margin-right: 10px;
-    border-radius: 25px;
+    margin-left: 1rem;
+    background-color: #FFB12D;
+    padding: 1rem 2rem;
   }
   
   .header a {
     text-decoration: none;
     font-size: 1.5rem;
-    display: block;
-    color: #000000;
-    text-align: center;
-    margin-top: 10px;
+    color: white;
   }
   
   .header a:hover,
