@@ -13,6 +13,7 @@ green-color: 7ED957
     justify-content: space-between;
     background-color: #CFCFCF;
     padding: 0 3%;
+    font-family:  Courier, monospace;
   }
 
   .header img {
