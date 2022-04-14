@@ -5,7 +5,7 @@ import {useEffect,useState} from 'react'
 function ResultsPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [loadedWhiteboards, setLoadedWhiteboards] = useState([]);
-
+  const TEST = true
   useEffect(() => {
     setIsLoading(true);
     fetch(
@@ -27,6 +27,7 @@ function ResultsPage() {
         }
 
         setIsLoading(false);
+        whiteboards.sort((a, b) => (a.votes < b.votes) ? 1 : -1)
         setLoadedWhiteboards(whiteboards);
       });
   }, []); 

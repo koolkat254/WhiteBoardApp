@@ -12,28 +12,17 @@ const WhiteboardItem = (props) => {
       votes: props.votes + 1,
     };
     fetch(
-      'https://react-getting-started-9c89e-default-rtdb.firebaseio.com/whiteboard.json',
+      `https://react-getting-started-9c89e-default-rtdb.firebaseio.com/whiteboard/${props.id}.json`,
       {
-        method: 'POST',
+        method: 'PUT',
         body: JSON.stringify(whiteboardData),
         headers: {
           'Content-Type' : 'application/json'
         }
       }
-    ).then(() => {
-      event.preventDefault();
-      
-      fetch(
-        'https://react-getting-started-9c89e-default-rtdb.firebaseio.com/whiteboard/'+props.id,
-        {
-          method: 'DELETE',
-          
-        }
-      ).then(res => res.text()) // or res.json()
-      .then(res => console.log(res))
     
-    }).then(() => {
-      /* window.location.reload(false) */
+    ).then(() => {
+      window.location.reload(false)
     })
     
   }
