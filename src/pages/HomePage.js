@@ -9,7 +9,7 @@ function HomePage() {
   useEffect(() => {
     setIsLoading(true);
     fetch(
-      'https://react-getting-started-9c89e-default-rtdb.firebaseio.com/whiteboard.json'
+      'https://react-getting-started-6e00e-default-rtdb.firebaseio.com/whiteboard.json'
     )
       .then((response) => {
         return response.json();
