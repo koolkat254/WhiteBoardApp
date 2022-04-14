@@ -12,7 +12,7 @@ const WhiteboardItem = (props) => {
       votes: props.votes + 1,
     };
     fetch(
-      'https://react-getting-started-6e00e-default-rtdb.firebaseio.com/whiteboard/${props.id}.json',
+      `https://react-getting-started-9c89e-default-rtdb.firebaseio.com/whiteboard/${props.id}.json`,
       {
         method: 'PUT',
         body: JSON.stringify(whiteboardData),
@@ -20,12 +20,19 @@ const WhiteboardItem = (props) => {
           'Content-Type' : 'application/json'
         }
       }
+    
     ).then(() => {
       window.location.reload(false)
     })
     
   }
-  
+    let button;
+    if (props.TESTFROMLIST === true) { 
+      button = <button onClick={addVote}>Votes</button>;
+    } else {
+      button = <p></p>;;
+    }
+    console.log(props.TESTFROMLIST)
  
   return (
     <li className={classes.item}>
@@ -39,11 +46,13 @@ const WhiteboardItem = (props) => {
           <p>{(props.votes)} Votes </p>
         </div>
         <div className={classes.actions}>
-          <button onClick={addVote}>Vote</button> 
+          {/* <button onClick={addVote}>Vote</button> */} 
+          {button}
         </div>
       </Card>
     </li>
   )
+
 }
  
 
