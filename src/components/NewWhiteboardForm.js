@@ -15,6 +15,7 @@ function NewWhiteboardForm(props) {
     const enteredTitle = titleInputRef.current.value;
     const enteredImage = imageInputRef.current.value;
     const enteredAuthor = authorInputRef.current.value;
+  
 
     const whiteboardData = {
       title: enteredTitle,
