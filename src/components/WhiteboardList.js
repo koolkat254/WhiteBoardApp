@@ -4,6 +4,10 @@ import classes from './WhiteboardList.module.css';
 
 
 function WhiteboardList(props) {
+  const TESTFROMLIST = props.TEST
+  if (TESTFROMLIST) {
+    ;
+  }
   return (
     <ul className={classes.list}>
     {props.whiteboards?.map((whiteboard) => (
@@ -14,6 +18,7 @@ function WhiteboardList(props) {
         title={whiteboard.title}
         author={whiteboard.author}
         votes={whiteboard.votes}
+      TESTFROMLIST = {TESTFROMLIST}
       />
     ))}
   </ul>

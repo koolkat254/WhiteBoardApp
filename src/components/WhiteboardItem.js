@@ -26,7 +26,13 @@ const WhiteboardItem = (props) => {
     })
     
   }
-  
+    let button;
+    if (props.TESTFROMLIST === true) { 
+      button = <button onClick={addVote}>Votes</button>;
+    } else {
+      button = <p></p>;;
+    }
+    console.log(props.TESTFROMLIST)
  
   return (
     <li className={classes.item}>
@@ -40,11 +46,13 @@ const WhiteboardItem = (props) => {
           <p>{(props.votes)} Votes </p>
         </div>
         <div className={classes.actions}>
-          <button onClick={addVote}>Vote</button> 
+          {/* <button onClick={addVote}>Vote</button> */} 
+          {button}
         </div>
       </Card>
     </li>
   )
+
 }
  
 
