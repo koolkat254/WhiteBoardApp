@@ -1,7 +1,6 @@
 import React from 'react';
 import classes from './WhiteboardItem.module.css';
 import Card from './ui/Card';
-
 const WhiteboardItem = (props) => {
   function addVote(event) {
     event.preventDefault();
@@ -20,20 +19,16 @@ const WhiteboardItem = (props) => {
           'Content-Type' : 'application/json'
         }
       }
-    
-    ).then(() => {
+     ).then(() => {
       window.location.reload(false)
     })
-    
   }
-    let button;
-    if (props.TESTFROMLIST === true) { 
-      button = <button onClick={addVote}>Votes</button>;
-    } else {
-      button = <p></p>;;
-    }
-    console.log(props.TESTFROMLIST)
- 
+  let button;
+  if (props.homePage === true) { 
+    button = <button onClick={addVote}>Votes</button>;
+  } else {
+    button = null;
+  }
   return (
     <li className={classes.item}>
       <Card>
@@ -46,13 +41,11 @@ const WhiteboardItem = (props) => {
           <p>{(props.votes)} Votes </p>
         </div>
         <div className={classes.actions}>
-          {/* <button onClick={addVote}>Vote</button> */} 
           {button}
         </div>
       </Card>
     </li>
   )
-
 }
  
 

@@ -5,27 +5,22 @@ import {useEffect,useState} from 'react'
 function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
   const [loadedWhiteboards, setLoadedWhiteboards] = useState([]);
-  const TEST = true
+  const homePage = true
   useEffect(() => {
     setIsLoading(true);
     fetch(
       'https://react-getting-started-9c89e-default-rtdb.firebaseio.com/whiteboard.json'
-    )
-      .then((response) => {
+    ).then((response) => {
         return response.json();
-      })
-      .then((data) => {
+      }).then((data) => {
         const whiteboards = [];
-
         for (const key in data) {
           const whiteboard = {
             id: key,
             ...data[key]
           };
-
           whiteboards.push(whiteboard);
         }
-
         setIsLoading(false);
         setLoadedWhiteboards(whiteboards);
       });
@@ -38,13 +33,10 @@ function HomePage() {
       </section>
     );
   }
-
-  
-  
   return (
     <section>
       <h1>Home Page</h1>
-      <WhiteboardList whiteboards={loadedWhiteboards} TEST={TEST} />
+      <WhiteboardList whiteboards={loadedWhiteboards} homePage={homePage} />
     </section>
   );
 }
