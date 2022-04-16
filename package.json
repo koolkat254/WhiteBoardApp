@@ -2,7 +2,7 @@
   "name": "whiteboardapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://koolkat254.github.io/WhiteBoardApp",
+  "homepage": "https://koolkat254.github.io/WhiteBoardApp/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
