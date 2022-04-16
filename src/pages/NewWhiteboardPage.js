@@ -4,7 +4,6 @@ import NewWhiteboardForm from '../components/NewWhiteboardForm';
 
 function NewWhiteboradPage() {
   const history = useNavigate();
-
   function addWhiteboardHandler(whiteboardData){
     fetch(
       'https://react-getting-started-6e00e-default-rtdb.firebaseio.com/whiteboard.json',
@@ -18,7 +17,6 @@ function NewWhiteboradPage() {
     ).then(() => {
       history('/');
     })
-
   }
   return (
     <section>
