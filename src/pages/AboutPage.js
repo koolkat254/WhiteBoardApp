@@ -14,10 +14,13 @@ const AboutPage = () => {
       </div>
       <div className={styles.creatorsbox}>
         <h1>Creators</h1>
-        <p>Evan Ethan Hasan Finn Hodges</p>
+        <p>Evan Salamasina<br/> Ethan Wieseler<br/> Hasan Merduman<br/> Finn Helm<br/> Hodges</p>
       </div>
       <div className={styles.contactsbox}>
         <h1>Contact</h1>
+        <p> 816-389-9348<br/>
+          albert.west@yahoo.com
+        </p>
       </div>
     </div>
   )
