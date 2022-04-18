@@ -36,7 +36,7 @@ function NewWhiteboardForm(props) {
         </div>
         <div className={classes.control}>
           <label htmlFor='image'>Image</label>
-          <input type='url' required id='image' ref={imageInputRef}/>
+          <input type='file' required id='png' ref={imageInputRef}/>
         </div>
         <div className={classes.control}>
           <label htmlFor='author'>Author</label>
