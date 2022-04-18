@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: build
+          ref: make
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
@@ -22,7 +22,7 @@ jobs:
           npm run build
       - name: Commit to build branch
         run: |
-          git checkout -f build
+          git checkout -f make
           rm -rf ./static/
           mv build/* .
           git config --global user.name "github-actions"
