@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/WhiteBoardApp/static/css/main.3a412f18.css",
+    "main.js": "/WhiteBoardApp/static/js/main.9b99ff6f.js",
+    "index.html": "/WhiteBoardApp/index.html",
+    "main.3a412f18.css.map": "/WhiteBoardApp/static/css/main.3a412f18.css.map",
+    "main.9b99ff6f.js.map": "/WhiteBoardApp/static/js/main.9b99ff6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a412f18.css",
+    "static/js/main.9b99ff6f.js"
+  ]
+}
