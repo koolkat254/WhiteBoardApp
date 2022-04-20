@@ -4,6 +4,7 @@ import classes from './NewWhiteboardForm.module.css'
 import { storage } from '../firebase'
 import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
 
+
 function NewWhiteboardForm(props) {
   const [file, setFile] = useState();
   // const [imageURL, setImageURL] = useState('');
@@ -17,36 +18,39 @@ function NewWhiteboardForm(props) {
     }
   };
   
-  const uploadFile = (file) => {
-    if (!file) return;
-    const storageRef = ref(storage, `/image/${file.name}`); 
-    const uploadTask = uploadBytesResumable(storageRef, file);
+  async function uploadFile(file){
+    return new Promise((resolve,reject) =>{
+        
+        const storageRef = ref(storage, `/image/${file.name}`); 
+        const uploadTask = uploadBytesResumable(storageRef, file);
 
-    uploadTask.on('state_changed', (snapshot) =>{
+        uploadTask.on('state_changed', (snapshot) =>{
 
-    }, (err) => console.log(err),
-    () =>{
-      getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-        console.log('File available at', downloadURL);
-        imageURL = downloadURL;
-        console.log('new image URL:  ', imageURL);
-      });
-    } )
+        }, (err) => console.log(err),
+        () =>{
+          getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+            console.log('File available at', downloadURL);
+            resolve(downloadURL)
+          });
+        } )
+
+
+  }, 2000)
   };
 
-  function submitHandler(event) {
+  async function submitHandler(event) {
     event.preventDefault();
     // const file = event.target.files[0]
     console.log("file data: ")
     console.log(file)
-    uploadFile(file);
+    imageURL = await uploadFile(file);
     console.log("image data: ")
     console.log(imageURL)
 
     const enteredTitle = titleInputRef.current.value;
     const enteredImage = imageURL;
     const enteredAuthor = authorInputRef.current.value;
-  
+
 
     const whiteboardData = {
       title: enteredTitle,

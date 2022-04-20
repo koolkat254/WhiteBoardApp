@@ -11,7 +11,7 @@ function App() {
 
     <div className='main'>
       <NavBar />
-        <Routes>
+        <Routes basename={process.env.PUBLIC_URL}>
           <Route path="/" element={<HomePage />} />
           <Route path="/new-WhiteBoard" element={<NewWhiteBoardPage />} />
           <Route path="/results" element={<ResultsPage />} />
