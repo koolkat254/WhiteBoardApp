@@ -4,11 +4,35 @@ import classes from './WhiteboardList.module.css';
 
 
 function WhiteboardList(props) {
-  const TESTFROMLIST = props.TEST
-
+  const homePage = props.homePage
+  function returnList(whiteboardList){
+    if (homePage) {
+      if (whiteboardList.length > 4){
+        let newList = [];
+        for (let i = 0; i <4 ; i++) {
+          console.log(whiteboardList)
+          let rand = Math.floor(Math.random() * whiteboardList.length)
+          newList.push(whiteboardList[rand]);
+          whiteboardList.splice(rand,1)     
+        } 
+        console.log("newList")
+        console.log(newList)
+        return newList;
+        }
+      }
+      else{
+      console.log(whiteboardList)
+      console.log("whiteboardList")
+      return whiteboardList;
+    } 
+    
+  }
+  
+  let fourList = returnList(props.whiteboards)
+  
   return (
     <ul className={classes.list}>
-    {props.whiteboards?.map((whiteboard) => (
+    {fourList?.map((whiteboard) => (
       <WhiteboardItem
         key={whiteboard.id}
         id={whiteboard.id}        
@@ -16,8 +40,7 @@ function WhiteboardList(props) {
         title={whiteboard.title}
         author={whiteboard.author}
         votes={whiteboard.votes}
-      TESTFROMLIST = {TESTFROMLIST}
-      />
+        homePage = {homePage}/>
     ))}
   </ul>
   )

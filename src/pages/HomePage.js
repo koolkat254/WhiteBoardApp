@@ -5,7 +5,7 @@ import {useEffect,useState} from 'react'
 function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
   const [loadedWhiteboards, setLoadedWhiteboards] = useState([]);
-  const TEST = true
+  const homePage = true
   useEffect(() => {
     setIsLoading(true);
     fetch(
@@ -44,7 +44,7 @@ function HomePage() {
   return (
     <section>
       <h1>Home Page</h1>
-      <WhiteboardList whiteboards={loadedWhiteboards} TEST={TEST} />
+      <WhiteboardList whiteboards={loadedWhiteboards} homePage={homePage} />
     </section>
   );
 }
