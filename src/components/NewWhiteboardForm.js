@@ -3,7 +3,7 @@ import Card from './ui/Card'
 import classes from './NewWhiteboardForm.module.css'
 import { storage } from '../firebase'
 import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
-import { waitFor } from '@testing-library/react';
+
 
 function NewWhiteboardForm(props) {
   const [file, setFile] = useState();
@@ -50,9 +50,7 @@ function NewWhiteboardForm(props) {
     const enteredTitle = titleInputRef.current.value;
     const enteredImage = imageURL;
     const enteredAuthor = authorInputRef.current.value;
-    while (imageURL=''){
-      console.log("waiting for imageURL...")
-    }
+
 
     const whiteboardData = {
       title: enteredTitle,
