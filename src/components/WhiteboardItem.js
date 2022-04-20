@@ -48,7 +48,7 @@ const WhiteboardItem = (props) => {
         <div className={classes.actions}>
           {/* <button onClick={addVote}>Vote</button> */} 
           {/* {button} */}
-          {props.TESTFROMLIST && <button onClick={addVote}>Votes</button>}
+          {props.homePage && <button onClick={addVote}>Votes</button>}
         </div>
       </Card>
     </li>

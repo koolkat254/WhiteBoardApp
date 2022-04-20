@@ -4,9 +4,9 @@ import classes from './WhiteboardList.module.css';
 
 
 function WhiteboardList(props) {
-  const TESTFROMLIST = props.TEST
+  const homePage = props.homePage
   function returnList(whiteboardList){
-    if (TESTFROMLIST) {
+    if (homePage) {
       if (whiteboardList.length > 4){
         for (let i = 0; i <4 ; i++) {
           let newList =[];
@@ -23,7 +23,7 @@ function WhiteboardList(props) {
       } 
     }
   }
-  console.log(TESTFROMLIST)
+  
   return (
     <ul className={classes.list}>
     {props.whiteboards?.map((whiteboard) => (
@@ -34,7 +34,7 @@ function WhiteboardList(props) {
         title={whiteboard.title}
         author={whiteboard.author}
         votes={whiteboard.votes}
-      TESTFROMLIST = {TESTFROMLIST}
+        homePage = {homePage}
       />
     ))}
   </ul>
