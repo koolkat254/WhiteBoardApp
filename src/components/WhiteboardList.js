@@ -11,14 +11,16 @@ function WhiteboardList(props) {
         let newList = [];
         for (let i = 0; i <4 ; i++) {
           console.log(whiteboardList)
-          newList.push(whiteboardList.pop(Math.random() * whiteboardList.length));
+          let r = (whiteboardList[Math.floor(Math.random() * whiteboardList.length)])
+          newList.push(r);
+          whiteboardList.pop(r);        
         } 
         console.log("newList")
         console.log(newList)
         return newList;
         }
-    }
-    else{
+      }
+      else{
       console.log(whiteboardList)
       console.log("whiteboardList")
       return whiteboardList;
