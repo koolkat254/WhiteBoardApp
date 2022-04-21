@@ -1,7 +1,9 @@
 import React from 'react';
 import classes from './WhiteboardItem.module.css';
 import Card from './ui/Card';
+
 const WhiteboardItem = (props) => {
+  // console.log("Homepage:" + props.homepage)
   function addVote(event) {
     event.preventDefault();
     const whiteboardData = {
@@ -11,7 +13,7 @@ const WhiteboardItem = (props) => {
       votes: props.votes + 1,
     };
     fetch(
-      `https://react-getting-started-9c89e-default-rtdb.firebaseio.com/whiteboard/${props.id}.json`,
+      `https://react-getting-started-6e00e-default-rtdb.firebaseio.com/whiteboard/${props.id}.json`,
       {
         method: 'PUT',
         body: JSON.stringify(whiteboardData),
@@ -19,16 +21,20 @@ const WhiteboardItem = (props) => {
           'Content-Type' : 'application/json'
         }
       }
-     ).then(() => {
+    
+    ).then(() => {
       window.location.reload(false)
     })
+    
   }
-  let button;
-  if (props.homePage === true) { 
-    button = <button onClick={addVote}>Votes</button>;
-  } else {
-    button = null;
-  }
+    // let button;
+    // if (props.TESTFROMLIST === true) { 
+    //   button = <button onClick={addVote}>Votes</button>;
+    // } else {
+    //   button = <p></p>;;
+    // }
+    // console.log(props.TESTFROMLIST)
+ 
   return (
     <li className={classes.item}>
       <Card>
@@ -41,11 +47,14 @@ const WhiteboardItem = (props) => {
           <p>{(props.votes)} Votes </p>
         </div>
         <div className={classes.actions}>
-          {button}
+          {/* <button onClick={addVote}>Vote</button>  */}
+          {/* {button} */}
+          {props.homePage && <button onClick={addVote}>Votes</button>}
         </div>
       </Card>
     </li>
   )
+
 }
  
 

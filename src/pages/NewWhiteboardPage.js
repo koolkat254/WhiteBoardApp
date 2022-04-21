@@ -6,7 +6,7 @@ function NewWhiteboradPage() {
   const history = useNavigate();
   function addWhiteboardHandler(whiteboardData){
     fetch(
-      'https://react-getting-started-9c89e-default-rtdb.firebaseio.com/whiteboard.json',
+      'https://react-getting-started-6e00e-default-rtdb.firebaseio.com/whiteboard.json',
       {
         method: 'POST',
         body: JSON.stringify(whiteboardData),
