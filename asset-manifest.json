@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/WhiteBoardApp/static/css/main.af13258d.css",
-    "main.js": "/WhiteBoardApp/static/js/main.6ec1a728.js",
+    "main.js": "/WhiteBoardApp/static/js/main.1a9b11c2.js",
     "index.html": "/WhiteBoardApp/index.html",
     "main.af13258d.css.map": "/WhiteBoardApp/static/css/main.af13258d.css.map",
-    "main.6ec1a728.js.map": "/WhiteBoardApp/static/js/main.6ec1a728.js.map"
+    "main.1a9b11c2.js.map": "/WhiteBoardApp/static/js/main.1a9b11c2.js.map"
   },
   "entrypoints": [
     "static/css/main.af13258d.css",
-    "static/js/main.6ec1a728.js"
+    "static/js/main.1a9b11c2.js"
   ]
 }
