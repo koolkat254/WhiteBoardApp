@@ -13,7 +13,7 @@ function WhiteboardList(props) {
           console.log(whiteboardList)
           let r = (whiteboardList[Math.floor(Math.random() * whiteboardList.length)])
           newList.push(r);
-          whiteboardList.pop(r);        
+          whiteboardList.pop(r);
         } 
         console.log("newList")
         console.log(newList)
