@@ -11,9 +11,9 @@ function WhiteboardList(props) {
         let newList = [];
         for (let i = 0; i <4 ; i++) {
           console.log(whiteboardList)
-          let r = (whiteboardList[Math.floor(Math.random() * whiteboardList.length)])
-          newList.push(r);
-          whiteboardList.pop(r);
+          let rand = Math.floor(Math.random() * whiteboardList.length)
+          newList.push(whiteboardList[rand]);
+          whiteboardList.splice(rand,1)     
         } 
         console.log("newList")
         console.log(newList)
