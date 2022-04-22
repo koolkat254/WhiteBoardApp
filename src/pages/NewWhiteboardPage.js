@@ -23,6 +23,7 @@ function NewWhiteboradPage() {
   return (
     <section>
       <h1>Add New Whiteboard</h1>
+      <p>Create your own Virtual Whiteboard and upload in real life pictures to your Virtual Whiteboard!</p>
       <NewWhiteboardForm  onAddWhiteboard={addWhiteboardHandler}/>
     </section>
   )
