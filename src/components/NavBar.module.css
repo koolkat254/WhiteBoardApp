@@ -33,7 +33,8 @@ green-color: 7ED957
   .header li {
     margin-left: 1rem;
     background-color: #FFB12D;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem
+
   }
  
   .header a {
