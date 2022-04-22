@@ -6,9 +6,9 @@ import styles from './NavBar.module.css';
 const NavBar = () => {
   return (
     <header className={styles.header}>
-        <div className={styles.logo}>White Board APP</div>
+        <div className={styles.logo}></div>
         <nav>
-            <ul>
+        <ul className={styles.menu}>
                 <li>
                     <Link to='/'>Home</Link>
                 </li>
@@ -22,6 +22,7 @@ const NavBar = () => {
                     <Link to='/about'>About</Link>
                 </li>
             </ul>
+
         </nav>
     </header>
   )
