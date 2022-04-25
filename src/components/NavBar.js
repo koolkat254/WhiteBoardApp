@@ -8,20 +8,22 @@ const NavBar = () => {
     <header className={styles.header}>
         <div className={styles.logo}>Whiteboard APP</div>
         <nav>
+    <ul>
+        <li>
+            <Link to='/'>home</Link>
             <ul>
                 <li>
-                    <Link to='/'>Home</Link>
+                    <Link to='/new-WhiteBoard'>b</Link>
                 </li>
                 <li>
-                    <Link to='/new-WhiteBoard'>Add Whiteboard</Link>
+                    <Link to='/results'>c</Link>
                 </li>
                 <li>
-                    <Link to='/results'>View Results</Link>
-                </li>
-                <li>
-                    <Link to='/about'>About</Link>
+                    <Link to='/about'>d</Link>
                 </li>
             </ul>
+        </li>
+    </ul>
         </nav>
     </header>
   )
