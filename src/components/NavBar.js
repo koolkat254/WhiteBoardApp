@@ -7,6 +7,8 @@ const NavBar = () => {
   return (
     <header className={styles.header}>
         <div className={styles.logo}>Whiteboard APP</div>
+        <img src="/icon picture.png"></img>
+        <div className={styles.logo}>White Board APP</div>
         <nav>
     <ul>
         <li>

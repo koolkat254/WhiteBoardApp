@@ -15,6 +15,13 @@ green-color: 7ED957
     padding: 0 3%;
     font-family:  Courier, monospace;
   }
+
+  .header img {
+    height: 110px;
+    width: 180px;
+  }
+
+  
   
   .logo {
     font-size: 2rem;
