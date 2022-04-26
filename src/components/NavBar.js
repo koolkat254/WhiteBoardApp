@@ -1,3 +1,5 @@
+
+
 import React from 'react'
 import { Link } from 'react-router-dom';
 import styles from './NavBar.module.css';
@@ -6,26 +8,23 @@ import styles from './NavBar.module.css';
 const NavBar = () => {
   return (
     <header className={styles.header}>
+        <img src="/icon picture.png" alt="whiteboard icon"></img>
         <div className={styles.logo}>Whiteboard APP</div>
-        <img src="/icon picture.png"></img>
-        <div className={styles.logo}>White Board APP</div>
         <nav>
-    <ul>
-        <li>
-            <Link to='/'>home</Link>
             <ul>
                 <li>
-                    <Link to='/new-WhiteBoard'>b</Link>
+                    <Link to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link to='/results'>c</Link>
+                    <Link to='/new-WhiteBoard'>Add Whiteboard</Link>
                 </li>
                 <li>
-                    <Link to='/about'>d</Link>
+                    <Link to='/results'>View Results</Link>
+                </li>
+                <li>
+                    <Link to='/about'>About</Link>
                 </li>
             </ul>
-        </li>
-    </ul>
         </nav>
     </header>
   )
