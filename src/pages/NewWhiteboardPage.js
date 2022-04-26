@@ -20,7 +20,7 @@ function NewWhiteboradPage() {
   }
   return (
     <section>
-      <h1>Add New Whiteboard</h1>
+      <h1>Wanna make a new Whiteboard?</h1>
       <NewWhiteboardForm  onAddWhiteboard={addWhiteboardHandler}/>
     </section>
   )

@@ -39,7 +39,7 @@ const WhiteboardItem = (props) => {
           <p>{(props.votes)} Votes </p>
         </div>
         <div className={classes.actions}>
-          {props.homePage && <button onClick={addVote}>Votes</button>}
+          {props.homePage && <button onClick={addVote}>VOTE</button>}
         </div>
       </Card>
     </li>

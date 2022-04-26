@@ -43,7 +43,7 @@ function HomePage() {
   
   return (
     <section>
-      <h1>Home Page</h1>
+      <h1>Select the picture that is your favorite and "VOTE" for it.</h1>
       <WhiteboardList whiteboards={loadedWhiteboards} homePage={homePage} />
     </section>
   );
