@@ -61,6 +61,7 @@ function NewWhiteboardForm(props) {
     console.log("Whiteboard data: ")
     console.log(whiteboardData);
     props.onAddWhiteboard(whiteboardData);
+    
   };
 
 

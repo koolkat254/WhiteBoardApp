@@ -3,7 +3,6 @@ import classes from './WhiteboardItem.module.css';
 import Card from './ui/Card';
 
 const WhiteboardItem = (props) => {
-  // console.log("Homepage:" + props.homepage)
   function addVote(event) {
     event.preventDefault();
     const whiteboardData = {
@@ -27,13 +26,6 @@ const WhiteboardItem = (props) => {
     })
     
   }
-    // let button;
-    // if (props.TESTFROMLIST === true) { 
-    //   button = <button onClick={addVote}>Votes</button>;
-    // } else {
-    //   button = <p></p>;;
-    // }
-    // console.log(props.TESTFROMLIST)
  
   return (
     <li className={classes.item}>
@@ -47,8 +39,6 @@ const WhiteboardItem = (props) => {
           <p>{(props.votes)} Votes </p>
         </div>
         <div className={classes.actions}>
-          {/* <button onClick={addVote}>Vote</button>  */}
-          {/* {button} */}
           {props.homePage && <button onClick={addVote}>Votes</button>}
         </div>
       </Card>
