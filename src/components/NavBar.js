@@ -8,7 +8,7 @@ import styles from './NavBar.module.css';
 const NavBar = () => {
   return (
     <header className={styles.header}>
-        <img src="/icon picture.png" alt="whiteboard icon"></img>
+        <img src="%PUBLIC_URL%/icon picture.png" alt="whiteboard icon"></img>
         <div className={styles.logo}>Whiteboard APP</div>
         <nav>
             <ul>

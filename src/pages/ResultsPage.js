@@ -42,6 +42,7 @@ function ResultsPage() {
   return (
     <div>
       <h1>Results</h1>
+      <p>Check to see how many people voted for your Virtual Whiteboard!</p>
       <WhiteboardList whiteboards={loadedWhiteboards} homePage={homePage} />
     </div>
   );

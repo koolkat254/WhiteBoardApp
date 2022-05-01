@@ -44,6 +44,7 @@ function HomePage() {
   return (
     <section>
       <h1>Home Page</h1>
+      <p>Choose which Whiteboard is the best!</p>
       <WhiteboardList whiteboards={loadedWhiteboards} homePage={homePage} />
     </section>
   );
