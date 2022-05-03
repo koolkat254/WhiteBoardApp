@@ -3,7 +3,7 @@ import styles from './AboutPage.module.css';
 
 const AboutPage = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.containerr}>
       <div className={styles.aboutbox}>
         <h1>About</h1>
         <p>Welcome to our Whiteboard App! We were originally a school project that our teacher had assigned to us.</p>
