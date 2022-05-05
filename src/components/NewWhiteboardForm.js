@@ -68,6 +68,7 @@ function NewWhiteboardForm(props) {
   return (
     <Card>
       <form className={classes.form} onSubmit={submitHandler}>
+      <div className={classes.border}>
         <div className={classes.control}>
           <label htmlFor='title'>Title</label>
           <input type='text' required id='title' ref={titleInputRef}/>
@@ -81,7 +82,8 @@ function NewWhiteboardForm(props) {
           <input type='text' required id='author' ref={authorInputRef}/>
         </div>
         <div className={classes.actions}>
-          <button>Add Whiteboard</button>
+          <button>+</button>
+        </div>
         </div>
         
       </form>

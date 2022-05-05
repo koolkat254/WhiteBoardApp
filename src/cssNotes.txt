@@ -1,1 +1,12 @@
-border:pink
+<li>
+                    <Link to='/'>Home</Link>
+                </li>
+                <li>
+                    <Link to='/new-WhiteBoard'>Add Whiteboard</Link>
+                </li>
+                <li>
+                    <Link to='/results'>View Results</Link>
+                </li>
+                <li>
+                    <Link to='/about'>About</Link>
+                </li>

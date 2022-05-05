@@ -4,13 +4,13 @@ import HomePage from './pages/HomePage'
 import NewWhiteBoardPage from './pages/NewWhiteboardPage'
 import ResultsPage from './pages/ResultsPage'
 import AboutPage from './pages/AboutPage'
-import NavBar from './components/NavBar';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
 
     <div className='main'>
-      <NavBar />
+      <Navbar />
         <Routes basename={process.env.PUBLIC_URL}>
           <Route path="/" element={<HomePage />} />
           <Route path="/new-WhiteBoard" element={<NewWhiteBoardPage />} />
